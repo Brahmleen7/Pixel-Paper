@@ -1,0 +1,142 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #FFE3BB;
+    min-height: 100vh;
+    display: flex; /*all child items (like buttons or links in a navbar) are by default kept in one single line, even if they overflow the container. Activates Flexbox layout for the body. This lets you easily align and position child elements (like divs) inside the body. */
+    flex-direction: column; /* Stacks child elements vertically (top to bottom) instead of the default horizontal layout (row). */
+    justify-content: center;  /* horizontal center */
+    align-items: center;      /* vertical center */
+}
+
+.profile-container {
+  display: flex;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  padding: 20px;
+  max-width: 700px;
+  width: 100%;
+  align-items: center;
+  gap: 30px;
+  margin-top: 100px;
+}
+
+.profile-photo img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-right: 30px;
+  border: 2px solid #03A6A1;
+}
+
+.profile-details {
+  flex-grow: 1;
+}
+
+.profile-details h2 {
+  margin-top: 0;
+  color: #03A6A1;
+}
+
+.profile-details p {
+  margin: 6px 0;
+  font-size: 16px;
+}
+
+
+/* Navbar container */
+.navbar {
+  display: flex;
+  justify-content: space-between; /* space between left and right sections */
+  align-items: center;
+  padding: 15px 30px;
+  padding-right: 10px;
+  background-color: #FFB347;
+  color: white;
+  font-family: Arial, sans-serif;
+  position: fixed;             /* Sticks it to the top */
+  top: 0;                      /* Align to top */
+  left: 0;                     /* Align to left */
+  width: 100%;
+  box-sizing: border-box; /* include padding in total width */
+  width: 100%;                 /* Full width */
+  z-index: 1000;               /* Stay on top of other content */
+  
+}
+
+/* Left part - Greeting */
+.navbar-left {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+/* Right part - Menu */
+.navbar-right {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.navbar-right li a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.navbar-right li a:hover {
+  text-decoration: underline;
+}
+
+#logout a{
+    color: blue;
+}
+
+
+* Container for the dropdown */
+.dropdown {
+  position: relative;            /* So the dropdown content is positioned relative to this */
+  display: inline-block;         /* Keep dropdown inline with other elements */
+}
+
+/* The main button that triggers the dropdown */
+.dropbtn {
+  background-color: #03A6A1;     /* Teal button color */
+  color: white;                  /* White text */
+  padding: 10px;           /* Inner spacing for better button size */
+  font-size: 16px;               /* Font size */
+  border: 0px;                  /* Remove default border */
+  border-radius: 8px;            /* Rounded corners */
+  cursor: pointer;               /* Pointer cursor on hover */
+}
+
+/* Hidden dropdown menu content */
+.dropdown-content {
+  display: none;                 /* Hide the content initially */
+  position: absolute;           /* Position it below the button */
+  background-color: white;      /* White background for the dropdown */
+  min-width: 180px;             /* Minimum width */
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2); /* Soft shadow */
+  border-radius: 6px;           /* Rounded corners */
+  z-index: 1;                   /* Place it above other elements */
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: black;                 /* Link text color */
+  padding: 12px 16px;           /* Padding for better spacing */
+  display: block;               /* Make links take full width */
+  text-decoration: none;        /* Remove underline */
+}
+
+/* Hover effect for links */
+.dropdown-content a:hover {
+  background-color: #f1f1f1;    /* Light grey background on hover */
+}
+
+/* Utility class to show the dropdown content */
+.show {
+  display: block;               /* When this class is added, the dropdown becomes visible */
+}

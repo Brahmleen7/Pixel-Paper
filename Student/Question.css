@@ -1,0 +1,63 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 40px;
+  background-color: #FFB347;
+}
+
+h2 {
+  color: #000000;
+  text-align: center;
+}
+
+form {
+  max-width: 800px;
+  margin: auto;
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.1);
+}
+
+.question {
+  margin-bottom: 25px;
+}
+
+.question p {
+  font-weight: bold;
+}
+
+label {
+  display: block;
+  margin: 6px 0;
+  cursor: pointer;
+}
+
+button {
+  background-color: #03A6A1;
+  color: white;
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  display: block;
+  margin: 30px auto 0;
+}
+
+button:hover {
+  background-color: #028b88;
+}
+
+
+/* Style for the result box shown after form submission */
+.result-box {
+  margin-top: 30px;              /* Space above the result */
+  font-weight: bold;             /* Make text bold */
+  font-size: 18px;               /* Slightly larger text */
+  color: #03A6A1;                /* Brand color */
+  text-align: center;            /* Center the result text */
+  padding: 20px;                 /* Inner spacing */
+  border: 2px dashed #03A6A1;    /* Dashed border style */
+  background-color: #f1fefc;     /* Light background */
+  border-radius: 8px;            /* Rounded corners */
+}

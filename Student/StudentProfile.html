@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Profile</title>
+    <link rel="stylesheet" href="StudentProfile.css">
+    <link rel="icon" type="image/png" href="../Pixel and Paper logo.png">
+</head>
+<body>
+
+<!-- Navbar -->
+  <nav class="navbar">
+    <div class="navbar-left" id="greeting">
+      Hey, username!
+      
+    </div>
+    
+
+    <ul class="navbar-right">
+      <li><a href="dashboard.html">Home</a></li>
+      <li><a href="StudentProfile.html">Profile</a></li>
+      <li><a href="#">Achievements</a></li>
+      <li><a href="Feedback.html">Feedback</a></li>
+      <li id="logout"><a href="#" onclick="logout()">Logout</a></li>
+
+      <div class="dropdown">
+         <button onclick="toggleDropdown()" class="dropbtn">Educational Resources</button>
+          <div id="dropdownContent" class="dropdown-content">
+            <a href="Class_10_Timetable.pdf" target="_blank">Timetable</a>
+            <a href="#">Homework</a>
+            <a href="#">Grades & Tests</a>
+            <a href="#">Attendance</a>
+            <a href="#">Resources</a>
+            <a href="#">Notices & Events</a>
+            <a href="CareerPathways.html">Career Pathways</a>
+          </div>
+      </div>
+      
+
+    </ul>
+  </nav>
+
+   <div class="profile-container">
+    <div class="profile-photo">
+      <img src="Studentimg.jpeg" alt="Student Photo">
+    </div>
+
+    <div class="profile-details">
+      <h2>Brahmleen Kaur</h2>
+      <p><strong>Class:</strong> 10</p>
+      <p><strong>Roll Number:</strong> 1234</p>
+      <p><strong>Admission Roll No:</strong> 2023/ADM/031</p>
+      <p><strong>Phone Number:</strong> +91-xyz</p>
+      <p><strong>Father's Name:</strong> abc</p>
+      <p><strong>Mother's Name:</strong> abc</p>
+    </div>
+  </div>
+
+
+
+  <!--Js Link-->
+
+<script src="StudentDashboard.js"></script>
+
+</body>
+</html>
