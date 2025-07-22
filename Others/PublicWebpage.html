@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Public Website</title>
+      <link rel="stylesheet" href="PublicWebpage.css">
+      <link rel="icon" type="image/png" href="../Pixel and Paper logo.png">
+</head>
+<body>
+
+  <!-- Main content container -->
+  <div class="container">
+
+    <!-- Website Title -->
+    <h1>Compare. Choose. Connect.</h1>
+    <p class="note">
+  Select a location and apply filters to explore and compare schools across Delhi-NCR. View details like fee structure, facilities, gender type, and admission links to make an informed decision.
+</p>
+
+
+    <!-- Location Dropdown -->
+    <div class="filter-section">
+      <label for="location">Select Location:</label>
+      <select id="location">
+        <option value="all">All</option>
+        <option value="delhi">Delhi</option>
+        <option value="noida">Noida</option>
+        <option value="gurgaon">Gurgaon</option>
+        <option value="ghaziabad">Ghaziabad</option>
+      </select>
+    </div>
+
+    <!-- Other filter checkboxes -->
+    <div class="filter-section">
+      <h3>Filters:</h3>
+      <label><input type="checkbox" name="filter" value="distance"> Nearby (within 5 km)</label>
+      <label><input type="checkbox" name="filter" value="gender"> Girls/Boys/Co-ed</label>
+      <label><input type="checkbox" name="filter" value="facilities"> Facilities (Labs, Sports, Smart Class)</label>
+      <label><input type="checkbox" name="filter" value="infrastructure"> Infrastructure (Playground, Building)</label>
+      <label><input type="checkbox" name="filter" value="fee"> Affordable Fee</label>
+    </div>
+
+    <!-- Section where all school cards are displayed -->
+    <div class="school-list">
+
+      <!-- Example School Card 1 -->
+      <div class="school-card" data-location="delhi">
+        <h2>Delhi Public School</h2>
+        <p><strong>Location:</strong> Delhi</p>
+        <p><strong>Gender:</strong> Co-ed</p>
+        <p><strong>Facilities:</strong> Smart Classes, Labs, Sports</p>
+        <p><strong>Fee:</strong> ₹80,000/year</p>
+        <!-- School links -->
+        <a href="https://www.dpsdelhi.in" target="_blank">Visit Website</a> |
+        <a href="https://www.dpsdelhi.in/admissions" target="_blank">Admission Form</a> |
+        <a href="tel:+911122334455">Call: +91-1122334455</a>
+      </div>
+
+      <!-- Example School Card 2 -->
+      <div class="school-card" data-location="noida">
+        <h2>Amity International School</h2>
+        <p><strong>Location:</strong> Noida</p>
+        <p><strong>Gender:</strong> Co-ed</p>
+        <p><strong>Facilities:</strong> AI Labs, Swimming Pool</p>
+        <p><strong>Fee:</strong> ₹1,20,000/year</p>
+        <a href="https://www.amity.edu" target="_blank">Visit Website</a> |
+        <a href="https://www.amity.edu/admissions" target="_blank">Admission Form</a> |
+        <a href="tel:+911123456789">Call: +91-1123456789</a>
+      </div>
+
+      <!-- Example School Card 3 -->
+      <div class="school-card" data-location="gurgaon">
+        <h2>The Shri Ram School</h2>
+        <p><strong>Location:</strong> Gurgaon</p>
+        <p><strong>Gender:</strong> Co-ed</p>
+        <p><strong>Facilities:</strong> Art Labs, Theatre, Language Labs</p>
+        <p><strong>Fee:</strong> ₹1,50,000/year</p>
+        <a href="https://www.tsrs.org" target="_blank">Visit Website</a> |
+        <a href="https://www.tsrs.org/admissions" target="_blank">Admission Form</a> |
+        <a href="tel:+911145678900">Call: +91-1145678900</a>
+      </div>
+
+      <!-- Example School Card 4 -->
+      <div class="school-card" data-location="ghaziabad">
+        <h2>Ryan International School</h2>
+        <p><strong>Location:</strong> Ghaziabad</p>
+        <p><strong>Gender:</strong> Co-ed</p>
+        <p><strong>Facilities:</strong> Computer Labs, Robotics, Sports Arena</p>
+        <p><strong>Fee:</strong> ₹70,000/year</p>
+        <a href="https://www.ryaninternational.org" target="_blank">Visit Website</a> |
+        <a href="https://www.ryaninternational.org/admissions" target="_blank">Admission Form</a> |
+        <a href="tel:+911135791357">Call: +91-1135791357</a>
+      </div>
+
+      <!-- Example School Card 5 -->
+      <div class="school-card" data-location="delhi">
+        <h2>Modern School Barakhamba</h2>
+        <p><strong>Location:</strong> Delhi</p>
+        <p><strong>Gender:</strong> Co-ed</p>
+        <p><strong>Facilities:</strong> Music Room, Library, Labs, Athletics</p>
+        <p><strong>Fee:</strong> ₹1,10,000/year</p>
+        <a href="https://www.modernschool.net" target="_blank">Visit Website</a> |
+        <a href="https://www.modernschool.net/admissions" target="_blank">Admission Form</a> |
+        <a href="tel:+911178945632">Call: +91-1178945632</a>
+      </div>
+    <!-- Go Back Button -->
+<div class="go-back">
+  <a href="welcome.html">← Go Back</a>
+    </div>
+  
+
+  </div>
+
+</body>
+</html>

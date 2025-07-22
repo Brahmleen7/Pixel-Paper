@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parent Home Page</title>
+    <link rel="stylesheet" href="ParentDashboard.css">
+    <link rel="icon" type="image/png" href="../Pixel and Paper logo.png">
+</head>
+<body>
+   
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="navbar-left" id="greeting">
+      Hey, Parent!
+    </div>
+
+    <ul class="navbar-right">
+      <li><a href="#">Home</a></li>
+      <li><a href="#">Notices & Circulars	</a></li>
+      <li><a href="#">Fee Info	</a></li>
+      <li><a href="#">PTM & Events	</a></li>
+      <li><a href="#">Messages	</a></li>
+      <li id="logout"><a href="Parent.html">Logout</a></li>
+
+
+
+      <div class="dropdown">
+         <button onclick="toggleDropdown()" class="dropbtn">Student's Progress</button>
+          <div id="dropdownContent" class="dropdown-content">
+            <a href="#">Homework & Submissions</a>
+            <a href="#">Attendance</a>
+            <a href="#">Academic Progress</a>
+            <a href="#">Timetablee</a>
+            <a href="#">Wellbeing Updates</a>
+            
+          </div>
+      </div>
+      
+    </ul>
+  </nav>
+
+  <!-- Content -->
+  <div class="page-content">
+    <h1>Welcome to your Dashboard</h1>
+  </div>
+
+<script src="ParentDashboard.js"></script>
+
+  
+</body>
+</html>

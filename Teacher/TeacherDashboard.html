@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teacher Home Page</title>
+    <link rel="stylesheet" href="TeacherDashboard.css">
+    <link rel="icon" type="image/png" href="../Pixel and Paper logo.png">
+</head>
+<body>
+   
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="navbar-left" id="greeting">
+      Hey, Teacher!
+    </div>
+
+    <ul class="navbar-right">
+      <li><a href="#">Home</a></li>
+      <li><a href="#">Class Overview</a></li>
+      <li><a href="#">Attendance </a></li>
+      <li><a href="#">Gradebook</a></li>
+      <li><a href="#">Assignments</a></li>
+      <li><a href="#">Timetable</a></li>
+      <li><a href="#">Resource Upload</a></li>
+      
+
+      <li id="logout"><a href="Teacher.html">Logout</a></li>
+      
+
+      <div class="dropdown">
+         <button onclick="toggleDropdown()" class="dropbtn">Parent Notices</button>
+          <div id="dropdownContent" class="dropdown-content">
+            <a href="#">Communication</a>
+            <a href="#">Notices & Circulars</a>
+            <a href="#">PTM Scheduler</a>
+            <a href="#">Analytics</a>
+            
+          </div>
+      </div>
+    </ul>
+  </nav>
+
+  <!-- Content -->
+  <div class="page-content">
+    <h1>Welcome to your Dashboard</h1>
+  </div>
+
+<!--Js Link-->
+
+<script src="TeacherDashboard.js"></script>
+
+  
+</body>
+</html>

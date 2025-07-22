@@ -1,0 +1,110 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.hero-text {
+  text-align: center;
+  margin-top: 40px;
+}
+
+.hero-text h1 {
+  font-size: 2.5rem;
+  color: #03A6A1;
+  margin: 0;
+}
+
+.hero-text p {
+  font-size: 1.2rem;
+  color: #FF4F0F;
+  margin-top: 10px;
+}
+
+.circle-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 60px;
+  flex-wrap: wrap;
+  margin: 60px 20px;
+}
+
+.circle-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.circle {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  font-size: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  
+}
+
+.circle:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 20px 6px rgba(15, 227, 255, 0.5); /* glowing orange shadow */
+  transition: all 0.3s ease;
+}
+
+
+/* Circle colors */
+.circle1 {
+  background-color: #03A6A1;
+  color: #000;
+}
+
+.circle2 {
+  background-color: #FFA673;
+  color: #000;
+}
+
+.circle3 {
+  background-color: #03A6A1;
+  color: #fff;
+}
+
+.label {
+  margin-top: 12px;
+  font-size: 1.1rem;
+  color: #333;
+}
+
+@media screen and (max-width: 600px) {
+  body {
+    padding: 20px 10px;
+  }
+
+  .circle-container {
+    gap: 30px;
+    margin: 40px 10px;
+  }
+
+  .circle-item {
+    flex: 1 1 100%;
+    max-width: 200px;
+  }
+
+  .circle {
+    width: 100px;
+    height: 100px;
+    font-size: 32px;
+  }
+
+  .label {
+    font-size: 0.95rem;
+  }
+}

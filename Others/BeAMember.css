@@ -1,0 +1,140 @@
+body {
+  font-family: Arial, sans-serif;
+  background: linear-gradient(to right, #FFB347, #FFE3BB);
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.form-container {
+  margin-top: 20px;
+  background-color: white;
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  width: 400px;
+}
+
+.form-container h2 {
+  text-align: center;
+  margin-bottom: 25px;
+  color: #333;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+  margin-top: 15px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"] {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+input[type="submit"] {
+  background-color: #FFB347;
+  color: white;
+  border: none;
+  padding: 12px;
+  width: 100%;
+  border-radius: 5px;
+  font-size: 16px;
+  margin-top: 20px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+input[type="submit"]:hover {
+  background-color: #ff9800;
+}
+
+.note {
+  text-align: center;
+  font-size: 13px;
+  margin-top: 15px;
+  color: #555;
+}
+
+#success-message {
+  text-align: center;
+  color: green;
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+.goback {
+  margin-top: 15px;
+  float:  right;
+}
+
+.goback a {
+  text-decoration: none;
+  color: #0835b1;
+  font-size: 14px;
+}
+
+.goback a:hover {
+  text-decoration: underline;
+  color: #FF9800; /* same hover color as the login button */
+}
+
+.contactus {
+  margin-top: 15px;
+  float:  left;
+}
+
+.contactus a {
+  text-decoration: none;
+  color: #0835b1;
+  font-size: 14px;
+}
+
+.contactus a:hover {
+  text-decoration: underline;
+  color: #FF9800; /* same hover color as the login button */
+}
+
+
+
+/* Responsive styles for mobile devices */
+@media (max-width: 600px) {
+  body {
+    flex-direction: column;
+    align-items: stretch;
+    padding: 20px;
+    height: auto;
+  }
+
+  .form-container {
+    width: 100%;
+    padding: 25px;
+    margin-top: 60px;
+    box-shadow: none;
+    border-radius: 0;
+  }
+
+  .goback, .contactus {
+    float: none;
+    text-align: center;
+    margin-top: 20px;
+  }
+
+  input[type="submit"] {
+    font-size: 14px;
+    padding: 10px;
+  }
+
+  .note {
+    font-size: 12px;
+  }
+}

@@ -1,0 +1,116 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-image: url(SCHOOLPIC.jpg);
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+  justify-content: center; /* Horizontal center */
+  
+}
+
+.welcome {
+  background-color: #FFA673; /* Square background color */
+  padding: 40px 60px;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+  text-align: center;
+}
+
+.welcome h1 {
+    background-color: #FFA673;
+    margin: 50px;
+    align-items: center;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+  align-items: center;
+  
+}
+
+
+.buttonofWelcome {
+    background-color: antiquewhite;
+    padding: 10px 10px;
+    border-radius: 12px;
+    align-items: center;
+    margin-top: 30px;
+
+}
+
+.buttonofWelcome:hover {
+    box-shadow: 0 0 20px 6px rgba(15, 227, 255, 0.5);
+    transform: scale(1.8); /* Slightly enlarge */
+    transition: all 0.3s ease;
+}
+
+
+
+@media screen and (max-width: 600px) {
+  body {
+    background-position: center;
+    background-size: cover;
+    padding: 20px;
+  }
+
+  .welcome {
+    padding: 20px 30px;
+    border-radius: 10px;
+  }
+
+  .welcome h1 {
+    font-size: 1.5rem;
+    margin: 30px 10px;
+  }
+
+  .buttonofWelcome {
+    font-size: 1rem;
+    padding: 10px 20px;
+    border-radius: 10px;
+  }
+
+  .buttonofWelcome:hover {
+    transform: scale(1.5); /* Slightly smaller enlarge for mobile */
+  }
+}
+
+
+
+@media screen and (max-width: 600px) {
+  body {
+    background-position: center;
+    background-size: cover;
+    padding: 20px;
+    justify-content: flex-start; /* Aligns better on smaller screens */
+  }
+
+  .welcome {
+    padding: 20px 30px;
+    border-radius: 10px;
+    width: 100%;
+    max-width: 350px;
+    margin: 30px auto;
+  }
+
+  .welcome h1 {
+    font-size: 1.5rem;
+    margin: 30px 10px;
+  }
+
+  .buttonofWelcome {
+    font-size: 1rem;
+    padding: 10px 20px;
+    border-radius: 10px;
+    display: inline-block;
+    margin-top: 15px;
+  }
+
+  .buttonofWelcome:hover {
+    transform: scale(1.5); /* Slightly smaller enlarge for mobile */
+  }
+}

@@ -1,0 +1,233 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-image: url(../SCHOOLPIC.jpg);
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+}
+
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.head {
+  background-color: #FFE3BB;
+  margin-bottom: 50px;
+  margin-top: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+  border-radius: 12px;
+}
+
+.hero-text {
+  text-align: center;
+  margin-top: 30px;
+  padding-top: 30px;
+  
+}
+
+.hero-text h1 {
+  font-size: 2.5rem;
+  color: #03A6A1;
+  margin: 0;
+}
+
+.hero-text p {
+  font-size: 1.2rem;
+  color: #FF4F0F;
+  margin-top: 10px;
+}
+
+.circle-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 60px;
+  flex-wrap: wrap;
+  margin: 60px 20px;
+}
+
+.circle-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.circle {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  font-size: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  
+}
+
+.circle:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 20px 6px rgba(15, 227, 255, 0.5); /* glowing orange shadow */
+  transition: all 0.3s ease;
+}
+
+
+/* Circle colors */
+.circle1 {
+  background-color: #03A6A1;
+  color: #000;
+}
+
+.circle2 {
+  background-color: #03A6A1;
+  color: #000;
+}
+
+.circle3 {
+  background-color: #03A6A1;
+  color: #fff;
+}
+
+.label {
+  font-size: 1.1rem;
+  color: #000000;
+  border: 10px;
+  padding: 10px;
+  border-radius: 12px;
+  border-color: #000;
+  background-color: #ffffff;
+}
+
+.label:hover{
+  transform: scale(1.05);
+  
+  transition: all 0.3s ease;
+}
+
+.Foot {
+  background-color: #FFE3BB;
+  padding: 10px 50px;
+  border: 50px;
+  border-radius: 12px;
+  margin-bottom: 50px;
+}
+
+.Foot:hover{
+  transform: scale(1.05);
+  box-shadow: 0 0 20px 6px rgba(255, 181, 83, 0.986);
+  transition: all 0.3s ease;
+}
+
+.special-link {
+  color: #03A6A1;           /* Change to any color you want */
+  font-weight: bold;    /* Optional: make it bold */
+  text-decoration: underline; /* Optional */
+}
+
+
+.center-link {
+  text-align: center;
+}
+
+.center-link-back{
+  text-align: center;
+}
+
+.center-link a {
+  color:#03A6A1;  
+  text-decoration: none; /* Optional: remove underline */
+  font-weight: bold;     /* Optional: bold text */
+}
+
+.center-link-back a{
+  color:#03A6A1;
+  font-size: medium;
+}
+
+
+
+
+/* Responsive Design */
+@media screen and (max-width: 600px) {
+  .hero-text h1 {
+    font-size: 1.8rem;
+  }
+
+  .hero-text p {
+    font-size: 1rem;
+  }
+
+  .circle {
+    width: 120px;
+    height: 120px;
+    font-size: 40px;
+  }
+
+  .label {
+    font-size: 1rem;
+  }
+}
+
+
+
+
+@media screen and (max-width: 600px) {
+  body {
+    padding: 10px;
+    background-position: center;
+    background-size: cover;
+  }
+
+  .hero-text {
+    margin-top: 20px;
+    padding-top: 20px;
+  }
+
+  .hero-text h1 {
+    font-size: 1.8rem;
+  }
+
+  .hero-text p {
+    font-size: 1rem;
+  }
+
+  .head {
+    padding: 10px 15px;
+    margin-top: 15px;
+    margin-bottom: 30px;
+    text-align: center;
+  }
+
+  .circle {
+    width: 120px;
+    height: 120px;
+    font-size: 36px;
+  }
+
+  .circle-container {
+    gap: 30px;
+    margin: 40px 10px;
+  }
+
+  .label {
+    font-size: 0.9rem;
+    padding: 8px 12px;
+  }
+
+  .Foot {
+    padding: 15px;
+    margin-bottom: 30px;
+    text-align: center;
+  }
+
+  .center-link-back a {
+    font-size: 14px;
+  }
+}
