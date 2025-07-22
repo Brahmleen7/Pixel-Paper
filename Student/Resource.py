@@ -56,7 +56,7 @@ resources = {
         {"title": "Indian Government e-Pathshala", "url": "https://epathshala.nic.in"},
         {"title": "MIT OpenCourseWare", "url": "https://ocw.mit.edu"}
     ],
-    "self-learners": [
+    "self-driven": [
         {"title": "Coursera Free Courses", "url": "https://www.coursera.org"},
         {"title": "Khan Academy (All levels)", "url": "https://www.khanacademy.org"},
         {"title": "EdX (Self-paced)", "url": "https://www.edx.org"},
