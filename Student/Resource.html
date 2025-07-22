@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Recommended Resources</title>
+
+  <!-- ✅ Inline CSS Styling -->
+  <style>
+    /* General page layout */
+    body {
+      font-family: Arial, sans-serif;
+      background: linear-gradient(to right, #e0f7fa, #ffffff);
+      margin: 0;
+      padding: 0;
+    }
+
+    /* Navbar styling */
+    nav {
+      background-color: #00796b;
+      color: white;
+      padding: 1rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    nav a {
+      color: white;
+      margin-left: 20px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    /* Container for the content */
+    .container {
+      padding: 2rem;
+    }
+
+    /* Section for learning type */
+    #type {
+      font-size: 1.2rem;
+      margin-bottom: 1rem;
+    }
+
+    /* Resource list */
+    ul#resource-list {
+      list-style-type: none;
+      padding: 0;
+    }
+
+    ul#resource-list li {
+      background-color: #f0f0f0;
+      margin: 10px 0;
+      padding: 10px;
+      border-left: 5px solid #00796b;
+    }
+
+    ul#resource-list li a {
+      text-decoration: none;
+      color: #00796b;
+      font-weight: bold;
+    }
+
+    ul#resource-list li a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+
+<body>
+
+
+
+  <!-- ✅ Main Content Container -->
+  <div class="container">
+    <h2>Your Recommended Resources</h2>
+
+    <!-- Displays the detected learning type -->
+    <div id="type"></div>
+
+    <!-- Will hold the list of recommended resources -->
+    <ul id="resource-list"></ul>
+  </div>
+
+  <!-- ✅ JavaScript for displaying recommendations -->
+  <script>
+    // Step 1: Get learning type from local storage
+    const learningType = localStorage.getItem("learningType");
+
+    // Step 2: Get recommendations array from local storage and parse it from JSON
+    const recommendations = JSON.parse(localStorage.getItem("recommendations"));
+
+    // Step 3: Show the learning type if available
+    const typeDiv = document.getElementById("type");
+    if (learningType) {
+      typeDiv.innerHTML = `<strong>Learning Type:</strong> ${learningType}`;
+    } else {
+      typeDiv.innerHTML = `<span style="color: red;">No learning type found. Please take the test first.</span>`;
+    }
+
+    // Step 4: Display the recommended resources
+    const list = document.getElementById("resource-list");
+
+    if (recommendations && recommendations.length > 0) {
+      recommendations.forEach(resource => {
+        const li = document.createElement("li");
+        li.innerHTML = `<a href="${resource.url}" target="_blank">${resource.title}</a>`;
+        list.appendChild(li);
+      });
+    } else {
+      list.innerHTML = "<li>No recommendations found. Please complete the questionnaire first.</li>";
+    }
+  </script>
+
+</body>
+</html>
